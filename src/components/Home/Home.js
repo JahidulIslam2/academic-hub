@@ -34,10 +34,14 @@ const Home = () => {
             <div className='border col-span-1'>
                 <h1 className='text-2xl mt-6'>About Me</h1>
                 <p className='text-orange-800 font-serif font-semibold text-xl'>Name: Jahidul Islam</p>
-             <div>
-                
+             <div className='h-16 w-auto bg-slate-200 rounded-md m-2 shadow-xl'>
+                <h1 className=''>
+                    <small className='text-green-600'>age: 22, </small>
+                    <small className='text-orange-600'>aim: programming, </small><br/>
+                    <small className='text-red-900'>hobby: astrography</small>
+                </h1>
              </div>
-
+                    
             </div>
         </div>
     );

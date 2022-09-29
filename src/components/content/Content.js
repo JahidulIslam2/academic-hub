@@ -12,7 +12,7 @@ const Content = (props) => {
             
             <div>
             <div className="card card-compact w-72 h-96 bg-base-100 shadow-xl gap-7 p-4 bg-slate-200 mt-9">
-                        <figure><img src={picture} alt="Shoes" /></figure>
+                        <figure><img src={picture} alt="img" /></figure>
                 <div className="card-body mt-4">
                     <h2 className="card-title mt-4 text-lg font-bold">Name: {name}</h2>
                     <p>work time: {timer}h</p>
