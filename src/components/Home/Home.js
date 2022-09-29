@@ -14,10 +14,12 @@ const Home = () => {
     
 
     return (
-        <div className='bg-slate-100 grid grid-cols-12 h-screen'>
-            <div className=' grid-cols-7 border-l-pink-900'>
-                <h1 >main body</h1>
-                    {
+        <div className='grid grid-cols-5 gap-4'>
+            <div className='border col-span-4'>
+
+                <div className='grid grid-cols-3 gap-4 '>
+
+                {
                         data.map(db =><Content 
                             picture={db.picture}
                             name={db.name}
@@ -26,9 +28,16 @@ const Home = () => {
                             key={db.id}
                             ></Content>)
                     }
+                </div>
+                    
             </div>
-            <div className='sidebar grid-cols-5 border-slate-900'>
-             <h1>sidebar</h1>
+            <div className='border col-span-1'>
+                <h1 className='text-2xl mt-6'>About Me</h1>
+                <p className='text-orange-800 font-serif font-semibold text-xl'>Name: Jahidul Islam</p>
+             <div>
+                
+             </div>
+
             </div>
         </div>
     );

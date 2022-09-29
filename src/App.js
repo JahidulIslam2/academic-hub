@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-stone-400">
       <Header></Header>
       <Home></Home>
     </div>
