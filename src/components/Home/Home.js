@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../cart/Cart';
 import Content from '../content/Content';
-import './Home.css';
+
 
 const Home = () => {
 

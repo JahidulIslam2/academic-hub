@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = (props) => {
     return (
         <div>
             <h1 className='mt-6 text-2xl text-left font-bold'>target complete at...</h1>
