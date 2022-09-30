@@ -61,7 +61,10 @@ const Home = () => {
                     <h1>Difference by props and State</h1>
                     Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.
                 </p>
-              
+                <h1>why use useEffect other than data load..?</h1>
+                <p>
+                    useEffect hook Some Use case.Running on state change: validating input field.live filtering. trigger animation on new array value.update paragraph list on fetched API data update.
+                </p>
             </div>
         </div>
     );
