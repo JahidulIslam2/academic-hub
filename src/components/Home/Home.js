@@ -58,7 +58,7 @@ const Home = () => {
                 <p> React implements a virtual DOM that is basically a DOM tree representation in JavaScript.So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser's DOM.</p>
 
                 <p>
-                    <h1>Difference by props and State</h1>
+                    <h1 className='font-extrabold w-64'>Difference by props and State</h1>
                     Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components.
                 </p>
                 <h1 className='font-extrabold'>why use useEffect other than data load..?</h1>
