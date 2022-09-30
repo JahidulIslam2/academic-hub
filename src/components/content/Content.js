@@ -1,13 +1,10 @@
 
 import React from 'react';
-import Cart from '../cart/Cart';
 
 const Content = (props) => {
-    const {name,picture,timer,key}=props
+    
+    const {name,picture,timer}=props
 
-    const addPracticeTime=()=>{
-            
-    }
     return (
         <div>
             
@@ -19,7 +16,7 @@ const Content = (props) => {
                     <p>work time: {timer}h</p>
                     <div className="card-actions justify-end">
                         <p>If your photos aren't good enough, then you're not close enough.</p>
-                    <button onClick={()=>addPracticeTime(props.timer)} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-9"> add list</button>
+                    <button onClick={()=>props.addPracticeTime(props.timer)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-9"> add list</button>
                     </div>
                 </div>
                 </div>
