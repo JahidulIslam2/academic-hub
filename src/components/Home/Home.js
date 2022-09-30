@@ -22,10 +22,10 @@ const Home = () => {
     
 
     return (
-        <div className='grid grid-cols-6 gap-4'>
-            <div className='border col-span-4'>
+        <div className='grid grid-cols-6 gap-4 '>
+            <div className=' col-span-4'>
 
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-3 gap-4 '>
 
                 {
                         cardInfo.map(db =><Content 
@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                     
             </div>
-            <div className='border col-span-2 '>
+            <div className=' col-span-2 bg-stone-500 shadow-gray-900 '>
                 <h1 className='text-2xl mt-6'>About Me</h1>
                 <p className='text-orange-800 font-serif font-semibold text-xl'>Name: Jahidul Islam</p>
              <div className='h-16 w-auto bg-slate-200 rounded-md m-2 shadow-xl '>
@@ -50,7 +50,7 @@ const Home = () => {
                     <small className='text-red-900'>hobby: astrography</small>
                 </h1>
              </div>
-            <Cart addTime={addTime}></Cart>
+                <Cart addTime={addTime}></Cart>
             </div>
         </div>
     );
