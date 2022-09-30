@@ -20,7 +20,6 @@ const Home = () => {
                 setTime(newAddTime)
     }
     
-console.log(addTime)
 
     return (
         <div className='grid grid-cols-6 gap-4'>
