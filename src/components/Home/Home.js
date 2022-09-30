@@ -22,10 +22,10 @@ const Home = () => {
     
 
     return (
-        <div className='grid grid-cols-6 gap-4 '>
-            <div className=' col-span-4'>
+        <div className='grid grid-cols-6 gap-4 lg:grid-cols-6 sm:col-span-6 '>
+            <div className=' col-span-4 sm:col-span-4 lg:col-span-4'>
 
-                <div className='grid grid-cols-3 gap-4 '>
+                <div className='grid grid-cols-3 gap-4 lg:col-span-3 sm:col-span-2'>
 
                 {
                         cardInfo.map(db =><Content 
@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                     
             </div>
-            <div className=' col-span-2 bg-stone-500 shadow-gray-900 '>
+            <div className=' col-span-2 bg-stone-500 shadow-gray-900 lg:col-span-2 sm:col-span-2 '>
                 <h1 className='text-2xl mt-6'>About Me</h1>
                 <p className='text-orange-800 font-serif font-semibold text-xl'>Name: Jahidul Islam</p>
              <div className='h-16 w-auto bg-slate-200 rounded-md m-2 shadow-xl '>
@@ -52,8 +52,18 @@ const Home = () => {
              </div>
                 <Cart addTime={addTime}></Cart>
             </div>
+            {/* Question */}
+            <div>
+                <h1>how Work React..?</h1>
+                <p> React implements a virtual DOM that is basically a DOM tree representation in JavaScript.So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser's DOM.</p>
+
+              
+            </div>
         </div>
     );
 };
 
 export default Home;
+
+
+
