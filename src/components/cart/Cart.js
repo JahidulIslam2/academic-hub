@@ -1,13 +1,20 @@
-import React, { useState }  from 'react';
+import React, { useEffect, useState }  from 'react';
 
 const Cart = (props) => {
 
     const[Break,setBreak]=useState("")
 
     const AddBreakTime=(props)=>{
+        localStorage.setItem("BreakTime",JSON.stringify([props]))
         setBreak(props)
         
     }
+
+    useEffect(()=>{
+        const getTimeLs=localStorage.getItem("BreakTime")
+        const parseLsData=JSON.parse(getTimeLs)
+        setBreak(parseLsData)
+    },[])
 
     return (
         <div>
